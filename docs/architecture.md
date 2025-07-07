@@ -12,7 +12,7 @@ This document provides a high-level overview of the MCP Agent Starter project ar
 - **Tech:** React, Tailwind CSS, Vite
 - **Customizable:** Yes! Add new UI components or change the look and feel easily.
 
-### 2. Backend (Cloudflare Worker) 🛠️
+### 2. MCP (Cloudflare Worker) 🛠️
 - **Location:** `src/server.ts`, `src/chat.ts`, `src/mcp.ts`, `src/tools.ts`
 - **Purpose:** Handles API requests, routes messages, and exposes tools via the MCP protocol.
 - **Customizable:** Yes! Feel free to explore! Most of your work here will involve adding new tools in `src/chat.ts` and `src/mcp.ts`, and some comments have been left for you to help describe the logic.
@@ -21,6 +21,17 @@ This document provides a high-level overview of the MCP Agent Starter project ar
   - `chat.ts`: ChatAgent definition
   - `mcp.ts`: MCP Agent and tool definitions
   - `tools.ts`: Tool registration and confirmation logic
+
+#### Backend API Integration 🔗
+- **Repository:** Tech-Xplore-API-2025
+- **Purpose:** Provides the backend infrastructure with comprehensive financial and sustainability advisor APIs
+- **Features:** 
+  - Financial advice and spending insights
+  - ESG investment recommendations
+  - Carbon footprint tracking and sustainability tips
+  - Comprehensive Swagger/OpenAPI documentation
+- **Integration:** The MCP tools can call these backend APIs to provide rich financial and sustainability data to users
+- **Documentation:** Full API documentation available at `/ui` (Swagger UI) and `/doc` (OpenAPI spec) and the READ.ME in the repository
 
 ### 3. Secrets & Configuration 🔐
 - **Local:** `.dev.vars` (not committed)
